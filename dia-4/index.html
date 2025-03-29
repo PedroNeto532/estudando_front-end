@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<!-- CSS interno -->
+<style>
+     form h2{
+        color: #34495e;
+        margin-bottom: 15px;
+    }
+    form label{
+        display: block;
+        font-weight: bold;
+       margin-bottom: 5px; 
+    }
+</style>
+<body style="font-family: Arial, Helvetica, sans-serif; margin-top: 20px; background-color: #f0f0f0;">
+    <!-- CSS Inline -->
+    <h1 style="text-align: center;color: #333; " aria-placeholder="Nome">Faça seu pedido!</h1>
+    <hr style="margin-top: 20px;" />
+    <form style="background-color: #f0f0f0;padding: 20px; border: 1px solid #ccc; border-radius: 5px; max-width: 600px; margin: auto;">
+
+    <h2>Dados do Cliente</h2>
+    <label for="nome_cliente">Nome:</label>
+    <input class="meuinput" type="nome_cliente" placeholder="Nome" name="Nome">
+    <br />
+    <label for="email_cliente">Email:</label>
+    <input type="email" id="email_cliente" placeholder="exemplo@com.br" name="email">
+    <br />
+    <hr/>
+    <h2>Endereço</h2>
+    <br />
+    <label for="bairro_cliente">Bairro:</label>
+    <input type="text" placeholder="Bairro" id="bairro_cliente" name="Bairro"/>
+    <br />
+    <label for="uf_cliente">UF:</label>
+    <input type="text" placeholder="UF" id="uf_cliente" name="UF"/>
+    <!-- Logradouro -->
+     <!-- Cep -->
+      <!-- Localidade -->
+       <!-- Complemento -->
+        <br />
+    <label for="number_cliente">Número:</label>
+    <input type="number" placeholder="8500000000" id="number_cliente" name="Número"/>
+    <br />
+    <hr />
+    <h2>Monte a sua Pizza</h2>
+    <br />
+    <p>Borda</p>
+    <br />
+    <label for="cheddar">Cheddar</label>
+    <input type="radio" id="cheddar" name="borda_pizza" value="cheddar"/>
+    <br />
+    <label for="requeijao">Requeijão</label>
+    <input type="radio" id="requeijao" name="borda_pizza" value="requeijao"/>    
+    <br />
+    <label for="chocolate">Chocolate</label>
+    <input type="radio" id="chocolate" name="borda_pizza" value="chocolate"/>
+  </br>
+    <br />
+    <!-- Select -->
+     <label for="sabor">Sabor:</label>
+        <select name="sabor" id="sabor">
+            <option value="4Queijo">4Queijo</option>
+            <option value="marquerita">Marquerita</option> 
+            <option value="chocolate">Chocolate</option> 
+            <option value="portuquesa">Portuquesa</option>
+        </select>
+    </br>
+        <p>Adicionais</p>
+        <input type="checkbox" id="queijo" name="adicional1" value="queijo">
+        <label for="queijo">Queijo</label>
+        </br>
+        <input type="checkbox" id="milho" name="adicional2" value="milho">
+        <label for="milho">Milho</label>
+        </br> <input type="checkbox" id="tomate" name="adicional3" value="tomate">
+        <label for="tomate">Tomate</label>
+        </br>
+        <label for="obs">Observação</label>
+    </br>
+        <textarea name="obs" id="obs"></textarea>
+    </br>
+    </br>
+    <input type="submit" value="ok">
+
+  </form>  
+</body>
+</html>
